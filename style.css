@@ -72,7 +72,7 @@ idhar humne strings li hain kiyunke hamare pass image hai */
     position: absolute; /* The element is positioned relative to its first positioned (not static) ancestor element */
     top: 30%;  
 }
-.headings{
+.headings1{
     font-family: century;
     font-size: 1.8rem;
     text-align: center;
@@ -324,6 +324,10 @@ idhar humne strings li hain kiyunke hamare pass image hai */
 }
 .headings{
     color: white;
+    font-family: century;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 30px  0px;
 }
 .contain{
     display: inline-block;
