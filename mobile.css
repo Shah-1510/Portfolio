@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Home */
+#home{
+    height: 820px;
+}
+.headings{
+    font-size: 1.7rem;
+}
+
+/* About */
+#pic img{
+    width: 200px;
+    height: 175px;
+}
+#intro h2{
+    font-size: 1.5rem;
+}
+
+/* Portfolio */
+.gallery img{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+}
+
+/* Contact */
+.contain{
+    width: 80%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.contain1{
+    width: 50%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.contain1 h5{
+    margin-left: auto;
+}
+.contain2{
+    width: 50%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.contain2 h5{
+    margin-left: auto;
+}
+
+/* Footer */
+footer .icon{
+    margin: 15px;
+}
