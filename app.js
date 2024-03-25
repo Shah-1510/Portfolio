@@ -1,6 +1,6 @@
 // Auto input
 var typed = new Typed(".auto-input", {
-    strings: ["DATA ANALYST","BUSINESS ANALYST","POWER BI DEVELOPER","FRONT END DEVELOPER"],
+    strings: ["BUSINESS INTELLIGECE ANALYST", "DATA ANALYST","POWER BI DEVELOPER","DATA SCIENTIST"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
@@ -10,7 +10,7 @@ var typed = new Typed(".auto-input", {
 // Scroll to Top
 const totop = document.querySelector(".to-top");
 window.addEventListener("scroll", () => {
-   if (window.pageYOffset > 100){
+   if (window.scrollY> 100){
        totop.classList.add("active");
    }else{
        totop.classList.remove("active");

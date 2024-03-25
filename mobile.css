@@ -8,7 +8,7 @@
     height: 820px;
 }
 .headings{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 /* About */
@@ -30,26 +30,37 @@
 /* Contact */
 .contain{
     width: 80%;
-    margin-left: 15%;
+    margin-left:11%;
     margin-bottom: 10px;
+    margin-right: 15%;
     font-size: 25px;
 }
 .contain1{
-    width: 50%;
-    margin-left: 15%;
+    width: 70%;
+    margin-left: 1%;
     margin-bottom: 10px;
+    margin-right: 15%;
     font-size: 25px;
 }
 .contain1 h5{
-    margin-left: auto;
+    margin-left: 10px;
 }
 .contain2{
-    width: 50%;
+    width: 40%;
     margin-left: 15%;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 15px;
 }
 .contain2 h5{
+    margin-left: auto;
+}
+.contain3{
+    width: 50%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.contain3 h5{
     margin-left: auto;
 }
 
