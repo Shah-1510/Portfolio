@@ -1,6 +1,6 @@
 // Auto input
 var typed = new Typed(".auto-input", {
-    strings: ["BUSINESS INTELLIGECE ANALYST", "DATA ANALYST","POWER BI DEVELOPER","DATA SCIENTIST"],
+    strings: ["BUSINESS INTELLIGENCE ANALYST", "DATA ANALYST","POWER BI DEVELOPER","DATA SCIENTIST"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
