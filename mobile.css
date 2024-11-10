@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Home */
+#home{
+    height: 820px;
+}
+.headings{
+    font-size: 1.3rem;
+}
+
+/* About */
+#pic img{
+    width: 200px;
+    height: 175px;
+}
+#intro h2{
+    font-size: 1.5rem;
+}
+
+/* Portfolio */
+.gallery img{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+}
+
+/* Contact */
+.contain{
+    width: 80%;
+    margin-left:11%;
+    margin-bottom: 10px;
+    margin-right: 15%;
+    font-size: 16px;
+}
+.contain h5{
+    margin-left: 16px;
+    font-size: 14px;
+}
+.contain1{
+    width: 70%;
+    margin-left: 1%;
+    margin-bottom: 10px;
+    margin-right: 15%;
+    font-size: 16px;
+}
+.contain1 h5{
+    margin-left: 12px;
+    font-size: 14px;
+}
+.contain2{
+    width: 40%;
+    margin-left: 12%;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.contain2 h5{
+    margin-left: auto;
+}
+.contain3{
+    width: 50%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.contain3 h5{
+    margin-left: auto;
+}
+
+/* Footer */
+footer .icon{
+    margin: 8px;
+    font-size: 25px;
+}
+
+footer .footerfont{
+    font-size: 13px;
+}

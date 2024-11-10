@@ -1,0 +1,488 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth; /* Allows a smooth animated "scroll effect" between elements within the scrolling box. */
+}
+
+/* navbar css*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky; /* An element with position: sticky; is positioned based on the user's scroll position. */
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+/* em (is me font ya content relativly change hoga hai baqi content ke size ke hisab se 
+   rem (is me wo content fix hojata hai aur koi farq nai parta usey content ka size change hone se)*/
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+.navbar ul li a{
+    text-decoration: none; /* In this it removes all the docration from text like underline, color */
+    color: white;
+    padding: 9px 25px;
+    transition: all .5s ease; /* specifies a transition effect with the same speed from start to end */
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/* before (content se pehle exist karta hai isme image ke above se styling horahi hai aur ye content ke baghair use nai hosakta 
+idhar humne strings li hain kiyunke hamare pass image hai */
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('akshar-dave-BcvPlibJyo0-unsplash.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1; /*It is relative/depends on position (it is z axis) (sets the z-order of a positioned element and its descendants 
+                                    or flex items. Overlapping elements with a larger z-index cover those with a smaller one.) */
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column; /* The flexible items are displayed vertically, as a column */
+    align-items: center;
+    position: absolute; /* The element is positioned relative to its first positioned (not static) ancestor element */
+    top: 30%;  
+}
+.headings1{
+    font-family: century;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 30px  0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white,0 0 15px white; /* Defining multiple shadows */
+    font-weight: bold;
+}
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* The width and height properties & min/max properties includes content, padding and border */
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+#intro p{
+    font-size: 20px;
+}
+#about h1{
+    font-size: 32px;
+}
+
+/*Portfolio Section*/
+#portfolio{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    align-items: center;
+    padding: 20px;
+    
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around 2px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    justify-content: center; 
+    
+}
+
+
+.gallery img{
+    width: 240px;
+    height: 210px;
+    margin: 25px;
+    transform: scale(1.1);
+    transition: all 0.8s ease-out;
+    
+
+}
+.gallery img:hover{
+    transform: scale(1) translateY(-7px);
+    opacity: 0.2;
+}
+.wraper{
+    font-family: sans-serif;
+    position: relative;
+    display: none;
+}
+.content{
+    position: absolute;
+    top: 45%;
+    left: 18%;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+
+}
+.content a{
+    font-size: 23px bold;
+    display: block;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    outline: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.content1{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #20DCBC;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+
+}
+.content1 a{
+    font-size: 23px bold;
+    display: block;
+    background-color: transparent;
+    border: 3px solid black;
+    color: white;
+    outline: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.content2{
+    position: absolute;
+    top: 45%;
+    left: 28%;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+
+}
+.content2 a{
+    font-size: 23px bold;
+    display: block;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    outline: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.content3{
+    position: absolute;
+    top: 45%;
+    left: 17%;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #20DCBC;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+
+}
+.content3 a{
+    font-size: 23px bold;
+    display: block;
+    background-color: transparent;
+    border: 3px solid black;
+    color: white;
+    outline: none;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.overlay{
+    opacity: 0;
+}
+.wraper:hover{
+    opacity: .5;
+}
+.wraper:hover .overlay{
+    opacity: 1 ;
+}
+
+.load-more{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    margin: 10px;
+
+}
+.load-more:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white,0 0 15px white; /* Defining multiple shadows */
+    font-weight: bold;
+}
+.load-less{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: 0.6s ease;
+    text-decoration: none;
+    margin: 10px;
+}
+.load-less:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white,0 0 15px white; /* Defining multiple shadows */
+    font-weight: bold;
+}
+
+
+
+
+/* Contact Section */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    
+}
+#contact3{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    
+}
+.headings{
+    color: white;
+    font-family: century;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 30px  0px;
+}
+.contain{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    font-family: century;
+    color: white;
+    font-size: 35px;
+    width: 31.33%;
+    float: left;
+}
+.contain a{
+    color: white;
+    text-decoration: none;
+    margin-left: 18%;
+
+}
+h5{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin-left: 1%;
+}
+
+
+.contain1{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    font-family: century;
+    color: white;
+    font-size: 35px;
+    width: 32.33%;
+    float: left;
+}
+.contain1 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 37%;
+
+}
+
+
+.contain2{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    font-family: century;
+    color: white;
+    font-size: 35px;
+    width: 33.33%;
+    float: 0 auto;
+}
+.contain2 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 35%;
+
+}
+.contain2 h5{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin-left: 1%;
+}
+
+.contain3{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    font-family: century;
+    color: white;
+    font-size: 23px;
+    width: 33.33%;
+    float: 0 auto;
+}
+.contain3 a{
+    color: white;
+    text-decoration: none;
+    margin-left: 26%;
+
+}
+.contain3 h5{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin-left: 1%;
+}
+
+
+
+/* Scroll to Top */
+.to-top{
+    background-color: white;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #1f1f1f;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+.to-top:hover{
+    background-color: black;
+    color: white;
+}
+
+/* footer */
+footer{
+    background:  rgba(0, 0, 0, 0.9);
+}
+
+footer a:link{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+footer a:active{
+    color: #fff;
+    text-decoration: none;
+}
+footer .icon{
+    margin: 20px;
+    font-size: 24px;
+
+}
+footer .icon:hover{
+    transform: translate(0, -2px);
+
+}

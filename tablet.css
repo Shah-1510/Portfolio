@@ -1,0 +1,37 @@
+/* Navbar */
+.navbar{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Headings */
+.headings{
+    font-size: 2.5rem;
+}
+
+/* About Section*/
+#pic{
+    flex-direction: column;
+    align-items: center;
+}
+#pic img{
+    width: 400px;
+    height: 300px;
+}
+#intro h2{
+    text-align: center;
+    padding: 10px;
+}
+
+/* Contact */
+.contain{
+    width:26%;
+    margin-left: auto;
+}
+.contain1{
+    width: 28%;
+}
+
+.contain2{
+    width: 26%;
+    margin-right: auto;
+}
