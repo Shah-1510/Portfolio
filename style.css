@@ -137,36 +137,70 @@ idhar humne strings li hain kiyunke hamare pass image hai */
     padding: 20px;
     
 }
-.gallery{
+.gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around 2px;
+    justify-content: center; 
     box-sizing: border-box;
     overflow: hidden;
-    position: relative;
-    justify-content: center; 
-    
 }
 
+.wraper {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.gallery img{
+.gallery img {
     width: 240px;
     height: 210px;
-    margin: 25px;
-    transform: scale(1.1);
-    transition: all 0.8s ease-out;
-    
+    margin-bottom: 5px;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 5px;
+}
 
+.gallery img:hover {
+    transform: translateY(-6px);
 }
-.gallery img:hover{
-    transform: scale(1) translateY(-7px);
-    opacity: 0.2;
+
+/* Box under the image */
+.info-box {
+    background: black;
+    color: white;
+    padding: 8px;
+    width: 240px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Space between text and icon */
 }
-.wraper{
-    font-family: sans-serif;
-    position: relative;
-    display: none;
+
+.project-name {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
 }
+
+.icon-link {
+    display: inline-block;
+    margin-top: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-link i {
+    font-size: 25px; /* Smaller icon */
+    color: white;
+}
+
+.icon-link:hover {
+    transform: translateY(-3px); /* Moves up slightly on hover */
+}
+
 .content{
     position: absolute;
     top: 45%;
@@ -263,16 +297,20 @@ idhar humne strings li hain kiyunke hamare pass image hai */
     cursor: pointer;
     text-decoration: none;
 }
+/*
 .overlay{
-    opacity: 0;
-}
-.wraper:hover{
-    opacity: .5;
-}
-.wraper:hover .overlay{
-    opacity: 1 ;
+  opacity: 0;
+
 }
 
+.wraper:hover{
+    opacity: 0.5;
+}
+
+.wraper:hover .overlay{
+    opacity: 1 ; 
+}
+*/
 .load-more{
     padding: 10px 35px;
     background-color: transparent;
@@ -308,6 +346,89 @@ idhar humne strings li hain kiyunke hamare pass image hai */
     box-shadow: 0 0 5px white, 0 0 10px white,0 0 15px white; /* Defining multiple shadows */
     font-weight: bold;
 }
+
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.lightbox-img {
+    width: 100%;
+    max-height: 550px;
+    border-radius: 5px;
+}
+
+/* Icon box styling */
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Icon links */
+.icon-link {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-link:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.close:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 20px;  
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
 
 
 
