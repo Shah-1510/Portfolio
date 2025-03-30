@@ -95,6 +95,10 @@ idhar humne strings li hain kiyunke hamare pass image hai */
     box-shadow: 0 0 5px white, 0 0 10px white,0 0 15px white; /* Defining multiple shadows */
     font-weight: bold;
 }
+
+
+
+
 /* About Section */
 #about{
     display: flex;
@@ -127,6 +131,88 @@ idhar humne strings li hain kiyunke hamare pass image hai */
     font-size: 32px;
 }
 
+
+
+.carousel-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    position: relative;
+}
+
+.carousel-title {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 33.33%; /* Display 3 images at a time */
+    min-width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-slide img {
+    max-width: 90%;
+    max-height: 90px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button.prev { left: 0; color: #959494; }
+.carousel-button.next { right: 0; color: #959494; }
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-dots button.active {
+    background-color: #777;
+}
+
+
+
+
+
+
 /*Portfolio Section*/
 #portfolio{
     display: flex;
@@ -144,6 +230,64 @@ idhar humne strings li hain kiyunke hamare pass image hai */
     box-sizing: border-box;
     overflow: hidden;
 }
+.gallery {
+    margin-top: 15px; /* Adjust this value as needed */
+}
+
+.portfolio-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    padding: 10px 20px;
+}
+
+/* Centering the heading properly */
+.portfolio-header .headings {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 5px;
+    
+}
+
+/* Search box container (aligns right) */
+.search-container {
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+/* Search box styling */
+#search-box {
+    padding: 8px 40px 8px 12px; /* Reduce padding to make it thinner */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 230px;
+}
+
+/* Search icon inside input */
+.search-icon {
+    position: absolute;
+    right: 12px;
+    font-size: 16px;
+    color: #888;
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 .wraper {
     font-family: sans-serif;
@@ -193,7 +337,7 @@ idhar humne strings li hain kiyunke hamare pass image hai */
 }
 
 .icon-link i {
-    font-size: 25px; /* Smaller icon */
+    font-size: 23px; /* Smaller icon */
     color: white;
 }
 

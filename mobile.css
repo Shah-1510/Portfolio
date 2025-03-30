@@ -11,6 +11,9 @@
     font-size: 1.3rem;
 }
 
+
+
+
 /* About */
 #pic img{
     width: 200px;
@@ -20,12 +23,87 @@
     font-size: 1.5rem;
 }
 
+
+@media (max-width: 768px) {
+    .carousel-button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-button {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /* Portfolio */
 .gallery img{
     width: 250px;
     height: 150px;
     margin: 10px;
 }
+@media screen and (max-width: 768px) {
+    .icon-link i {
+        font-size: 23px; /* Adjust size as needed */
+    }
+}
+
+/* Responsive Design for Mobile */
+@media screen and (max-width: 768px) {
+    .portfolio-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        gap: 10px; /* Adds spacing between heading & search box */
+    }
+
+    .portfolio-header .headings {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    .search-container {
+        position: relative;
+        width: 100%;
+        max-width: 200px; /* Control width */
+        margin: 0 auto; /* Ensures full centering */
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+    }
+
+    #search-box {
+        width: 100%;
+        padding-right: 25px; /* Creates space for the icon */
+        text-align: left;
+    }
+
+    .search-icon {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #888;
+        cursor: pointer;
+    }
+}
+
+
+
 
 /* Contact */
 .contain{
