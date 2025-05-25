@@ -149,10 +149,18 @@
 
 /* Footer */
 footer .icon{
-    margin: 8px;
+    margin: 5px;
     font-size: 25px;
 }
 
 footer .footerfont{
     font-size: 13px;
+}
+@media (max-width: 400px) {
+  footer .icon {
+    font-size: 20px;
+  }
+  footer .footerfont {
+    font-size: 11px;
+  }
 }
