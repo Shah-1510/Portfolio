@@ -88,6 +88,11 @@ images.forEach((img, index) => {
 
 
 
+
+
+
+
+
 // Search Box
 
 $(document).ready(function () {
